@@ -7,6 +7,8 @@ import CoverImage from "../components/Preact/CoverImage";
 import ForecastCard from "../components/ForecastCard.astro";
 import { Image } from "astro:assets";
 import { CLogo } from "../assets";
+
+const currentYear = new Date().getFullYear();
 ---
 
 <Layout title="Vortexa | Weather Insights">
@@ -39,7 +41,7 @@ import { CLogo } from "../assets";
 			</a>
 			<a
 				class="flex_center gap-2"
-				href="https://github.com/ChiragChrg/vortexa"
+				href="https://github.com/ChiragChrg"
 				target="_blank"
 			>
 				<svg
@@ -58,11 +60,13 @@ import { CLogo } from "../assets";
 					>
 					</path>
 				</svg>
-				<span>Source Code</span>
+				<span>GitHub</span>
 			</a>
 		</nav>
 
-		<p class="text-white/75 tracking-wider">© Copyright 2023 ChiragChrg</p>
+		<p class="text-white/75 tracking-wider">
+			© Copyright 2023 - {currentYear} ChiragChrg
+		</p>
 	</footer>
 
 	<CoverImage background={true} client:load />
