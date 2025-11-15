@@ -19,8 +19,8 @@
     "luxon": "^3.7.2",
     "nanostores": "^1.0.1",
     "preact": "^10.27.2",
-    "sharp": "^0.34.3",
-    "tailwindcss": "^4.1.13",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
